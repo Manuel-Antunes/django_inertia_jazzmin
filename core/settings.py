@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'tagify',
     'inertia',
     'jazzmin',
     'django.contrib.admin',
@@ -152,7 +153,6 @@ JAZZMIN_SETTINGS = {
     "welcome_sign": "Bem vindo ao Painel do DIJ!",
     "site_logo_classes": "img-circle",
     "copyright": "Lisbom Ltd",
-    "custom_css": "css/bootstrap-light.css",
     "user_avatar": "sex",
 }
 
