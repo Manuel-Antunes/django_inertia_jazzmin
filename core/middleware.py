@@ -8,7 +8,6 @@ class InertiaShareMiddleware:
         # One-time configuration and initialization.
 
     def __call__(self, request):
-        print(request.user.is_authenticated)
         share(request,
               # app_name=settings.APP_NAME,
               user=lambda: request.user,
