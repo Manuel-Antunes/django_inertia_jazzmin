@@ -1,0 +1,4 @@
+Django==4.2
+django-jazzmin==2.6.0
+inertia-django==0.5.2
+django-vite==2.0.2

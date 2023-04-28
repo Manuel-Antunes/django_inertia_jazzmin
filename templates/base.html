@@ -1,0 +1,12 @@
+{% extends 'admin/base.html' %}
+{% load django_vite %}
+
+{% block extrahead %}
+    {% vite_hmr_client %}
+    {% vite_asset 'frontend/app.tsx' %}
+{% endblock %}
+
+{% block content %}
+  {{ block.super }}
+  {% block inertia %}{% endblock  %}
+{% endblock %}
