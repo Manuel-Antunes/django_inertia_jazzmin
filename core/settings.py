@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'inertia.middleware.InertiaMiddleware',
+    'core.middleware.InertiaShareMiddleware'
 ]
 
 ROOT_URLCONF = 'core.urls'
