@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_vite'
+    'django_vite',
+    'posts'
 ]
 
 MIDDLEWARE = [
@@ -136,4 +137,33 @@ STATICFILES_DIRS = [DJANGO_VITE_ASSETS_PATH]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-INERTIA_LAYOUT='base.html'
+INERTIA_LAYOUT = 'base.html'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Django Inertia Jazzmin (DIJ)",
+    "site_header": "DIJ",
+    "site_brand": "Painel do DIJ",
+    "icons": {
+        "posts.Post": "fas fa-file-contract",
+        "auth.user": "fas fa-user-cog",
+        "auth.group": "fas fa-users-cog",
+    },
+    "welcome_sign": "Bem vindo ao Painel do DIJ!",
+    "site_logo_classes": "img-circle",
+    "copyright": "Lisbom Ltd",
+    "custom_css": "css/bootstrap-light.css",
+    "user_avatar": "sex",
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "accent": "accent-gray",
+    "navbar": "navbar-white",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success",
+    },
+}

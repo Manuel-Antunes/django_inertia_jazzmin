@@ -1,0 +1,9 @@
+{% extends "admin/submit_line.html" %}
+
+{% block extra-actions %}
+
+{# For a simple link #}
+<div class="form-group">
+    <a href="{% url 'posts:chat' original.id %}" class="btn btn-primary btn-block">Open post chat</a>
+</div>
+{% endblock %}
