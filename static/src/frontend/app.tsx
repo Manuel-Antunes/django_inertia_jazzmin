@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resolve: name => {
       return resolvePageComponent(
         name,
-        (import.meta as any).glob("./Pages/**/*.tsx")
+        import.meta.glob("./Pages/**/*.tsx")
       );
     },
     setup({ el, App, props }) {
