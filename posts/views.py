@@ -7,6 +7,7 @@ from django.contrib.admin.sites import site
 @login_required
 def chat(request,id):
   ctx = site.each_context(request)
+  ctx['app_label'] = 'Post'
   post = Post.objects.get(id=id)
   return render(request, "Post/Chat", template_data=ctx, props={
     'post': post

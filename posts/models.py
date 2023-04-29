@@ -18,14 +18,14 @@ class Post(models.Model):
 
         return format_html(html)
 
+    def __str__(self):
+        return self.title
+
     class Meta:
         ordering = ['-created_at']
         db_table = 'posts'
         verbose_name = 'Post'
         verbose_name_plural = 'Posts'
-
-    def __str__(self):
-        return self.title
     my_tags.short_description = 'Tags'
     my_tags.allow_tags = True
 

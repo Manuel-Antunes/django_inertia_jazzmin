@@ -4,6 +4,8 @@
 
 {# For a simple link #}
 <div class="form-group">
-    <a href="{% url 'posts:chat' original.id %}" class="btn btn-primary btn-block">Open post chat</a>
+    {% if original.id %}
+        <a href="{% url 'posts:chat' original.id %}" class="btn btn-primary btn-block">Open post chat</a>
+    {% endif %}
 </div>
 {% endblock %}

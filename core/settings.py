@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'posts',
+    'influencers',
     'tagify',
     'inertia',
     'jazzmin',
@@ -40,8 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_vite',
-    'posts'
+    'django_vite'
 ]
 
 MIDDLEWARE = [
@@ -149,6 +150,7 @@ JAZZMIN_SETTINGS = {
         "posts.Post": "fas fa-file-contract",
         "auth.user": "fas fa-user-cog",
         "auth.group": "fas fa-users-cog",
+        "influencers.Influencer": "fas fa-users",
     },
     "welcome_sign": "Bem vindo ao Painel do DIJ!",
     "site_logo_classes": "img-circle",
